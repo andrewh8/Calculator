@@ -29,6 +29,12 @@ body {
     border-radius: 10px;
     background-color: rgba(95, 216, 84, 0.637);
     border-style: inset;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(3, 3, 3, 0.733);
 }
 
 .buttonPanel {
@@ -59,3 +65,6 @@ button:hover {
     background-color: rgb(204, 198, 198);
 }
 
+.operator, .backSpace, .clear {
+    background-color: rgb(148, 145, 145);
+}
