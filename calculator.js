@@ -7,8 +7,12 @@ let temp = "";
 const numbers = document.querySelectorAll(".number");
 numbers.forEach((number) => {
     number.addEventListener("click", () => {
-        temp = temp + number.textContent;
-        screen.textContent = temp;
+        if (temp.includes(".") && number.textContent === "."){
+            return;
+        } else {
+            temp = temp + number.textContent;
+            screen.textContent = temp;
+        }
     })
 })
 
